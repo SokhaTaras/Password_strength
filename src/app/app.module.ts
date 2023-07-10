@@ -6,19 +6,17 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
 import { PasswordComponent } from './components/password/password.component';
 import { PasswordStrengthComponent } from './components/password-strength/password-strength.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     PasswordComponent,
-    PasswordStrengthComponent
+    PasswordStrengthComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
